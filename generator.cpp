@@ -41,7 +41,7 @@ vector<vector<char>> generateBoard(vector<string> words) {
     
     int pos_i, pos_j, dir_i, dir_j, cur_pos_i, cur_pos_j;
     for(string word : words) {
-        while(1) {
+        while(1) { // with sufficiently large board, this loop will always terminate
             bool bad_position = false;
             
             pos_i = randNum(0, BOARD_SIZE - 1), pos_j = randNum(0, BOARD_SIZE - 1); 
